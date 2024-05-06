@@ -9,24 +9,85 @@ z2
 cModel Technology
 Z0 dC:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/simu
 Ealu
-w1715028009
-DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z1 w1715036099
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-8../src/ALU.vhd
-F../src/ALU.vhd
+Z5 8../src/ALU.vhd
+Z6 F../src/ALU.vhd
 l0
 L6
 VhUeL8V2SA?6nzmAP=ZCf:3
 !s100 C6<7^3EU:>[Gm>0Q0A_T>1
-OV;C;10.5b;63
+Z7 OV;C;10.5b;63
 31
-!s110 1715028017
+Z8 !s110 1715036107
 !i10b 1
-!s108 1715028017.000000
-!s90 -reportprogress|300|-93|../src/ALU.vhd|
-!s107 ../src/ALU.vhd|
+Z9 !s108 1715036107.000000
+Z10 !s90 -reportprogress|300|-93|../src/ALU.vhd|
+Z11 !s107 ../src/ALU.vhd|
 !i113 1
 o-93
-tExplicit 1 CvgOpt 0
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+Z13 DEx4 work 3 alu 0 22 hUeL8V2SA?6nzmAP=ZCf:3
+l21
+L16
+V1JUa6DF>T=UQP>7V>DRCg3
+!s100 31A8UMm8MJfPD:<R3S1`H0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Etb_alu
+Z14 w1715033752
+R2
+R3
+R4
+R0
+Z15 8tb_ALU.vhd
+Z16 Ftb_ALU.vhd
+l0
+L6
+VGokJd=98>?fejDN?O_73I2
+!s100 ^]^ANz2E6M07CnkHfJ8o[1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|tb_ALU.vhd|
+Z18 !s107 tb_ALU.vhd|
+!i113 1
+o-93
+R12
+Atb_arch
+R13
+R2
+R3
+R4
+Z19 DEx4 work 6 tb_alu 0 22 GokJd=98>?fejDN?O_73I2
+l17
+L9
+Z20 VV^IUi[>z>6PADD_MRLeHJ1
+Z21 !s100 =K1_>LR1BCh;fW<6:S;R40
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+o-93
+R12
