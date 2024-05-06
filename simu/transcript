@@ -1,0 +1,147 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# vsim -gui . 
+# Start time: 22:33:02 on May 06,2024
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 22:33:03 on May 06,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+do simualu.do
+# Simulation script for ModelSim 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:33:13 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:33:13 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
+do simualu.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:36:18 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:36:18 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
+do simualu.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:37:42 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:37:42 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
+do simualu.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:38:29 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:38:29 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
+do simualu.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:08 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:39:08 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
+do simualu.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:28 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:39:28 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
+do simualu.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:40:17 on May 06,2024
+# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture RTL of ALU
+# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
+# End time: 22:40:17 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simualu.do line 4
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/ALU.vhd"
