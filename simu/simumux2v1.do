@@ -1,19 +1,18 @@
 puts "Simulation script for ModelSim "
 
 vlib work
-vcom -93 ../src/ALU.vhd
-vcom -93 tb_ALU.vhd
+vcom -93 ../src/Mux2v1.vhd
+vcom -93 tb_Mux2v1.vhd
 
-vsim -novopt tb_ALU
+vsim -novopt tb_Mux2v1
 
 
-add wave tb_OP
 add wave -radix hexadecimal tb_A
 add wave -radix hexadecimal tb_B
 add wave -radix hexadecimal tb_S
-add wave tb_N
-add wave tb_Z
-add wave tb_C
-add wave tb_V
+add wave tb_COM
+
 run -a
 wave zoom full
+
+

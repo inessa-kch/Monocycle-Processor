@@ -1,1320 +1,266 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # vsim -gui . 
-# Start time: 22:33:02 on May 06,2024
+# Start time: 15:40:47 on May 07,2024
 # ** Error (suppressible): (vsim-19) Failed to access library '' at "".
 # Invalid argument. (errno = EINVAL)
 # Error loading design
-# End time: 22:33:03 on May 06,2024, Elapsed time: 0:00:01
+# End time: 15:40:47 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-do simualu.do
-# Simulation script for ModelSim 
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:33:13 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:33:13 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:36:18 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:36:18 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:37:42 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:37:42 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:29 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:38:29 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:39:08 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:39:08 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:39:28 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:39:28 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:40:17 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:40:17 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:57:06 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(21): near "PROCESS": (vcom-1576) expecting BEGIN.
-# End time: 22:57:06 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:02:26 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(47): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(48): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
-# ** Error: ../src/ALU.vhd(48): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(48): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(50): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(50): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(50): Illegal sequential statement.
-# ** Error (suppressible): ../src/ALU.vhd(45): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error (suppressible): ../src/ALU.vhd(46): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(53): VHDL Compiler exiting
-# End time: 23:02:26 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 10, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:05:12 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(45): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(46): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
-# ** Error: ../src/ALU.vhd(46): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(46): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(48): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(48): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(48): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(23): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
-# ** Error (suppressible): ../src/ALU.vhd(43): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error (suppressible): ../src/ALU.vhd(44): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(51): VHDL Compiler exiting
-# End time: 23:05:12 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:13:24 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(39): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
-# ** Error: ../src/ALU.vhd(39): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(41): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(24): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
-# ** Error (suppressible): ../src/ALU.vhd(36): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error (suppressible): ../src/ALU.vhd(37): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(44): VHDL Compiler exiting
-# End time: 23:13:24 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:14:20 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(39): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(41): Illegal sequential statement.
-# ** Error: ../src/ALU.vhd(24): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
-# ** Error (suppressible): ../src/ALU.vhd(36): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error (suppressible): ../src/ALU.vhd(37): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(44): VHDL Compiler exiting
-# End time: 23:14:20 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:20:48 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error: ../src/ALU.vhd(40): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(41): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(43): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: ../src/ALU.vhd(43): Cannot read output "S".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error (suppressible): ../src/ALU.vhd(38): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error (suppressible): ../src/ALU.vhd(39): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(46): VHDL Compiler exiting
-# End time: 23:20:48 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:21:18 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error (suppressible): ../src/ALU.vhd(38): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error (suppressible): ../src/ALU.vhd(39): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(46): VHDL Compiler exiting
-# End time: 23:21:18 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:28:32 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# ** Error (suppressible): ../src/ALU.vhd(39): (vcom-1272) Length of expected is 33; length of actual is 32.
-# ** Error: ../src/ALU.vhd(46): VHDL Compiler exiting
-# End time: 23:28:32 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 4
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 ../src/ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:28:59 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:28:59 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:28:59 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TEST of tb_ALU
-# -- Loading entity ALU
-# ** Error: tb_ALU.vhd(50): Labels do not match: 'TEST' and 'tb_ALU'.
-# ** Error: tb_ALU.vhd(50): VHDL Compiler exiting
-# End time: 23:28:59 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 5
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 tb_ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:29:41 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:29:41 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:29:41 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# ** Error: tb_ALU.vhd(50): Labels do not match: 'TB_ARCH' and 'tb_ALU'.
-# ** Error: tb_ALU.vhd(50): VHDL Compiler exiting
-# End time: 23:29:41 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 5
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 tb_ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:29:59 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:29:59 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:29:59 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:29:59 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_ALU 
-# Start time: 23:29:59 on May 06,2024
+vsim -gui work.tb_memoire_data
+# vsim -gui work.tb_memoire_data 
+# Start time: 15:41:18 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 3).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: C flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# Break key hit
+quit -sim
+# End time: 15:42:18 on May 07,2024, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0
+do simumemory.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:31:15 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# Start time: 15:42:32 on May 07,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:31:15 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Data
+# -- Compiling architecture RTL of Memoire_Data
+# End time: 15:42:32 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:31:15 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
+# Start time: 15:42:32 on May 07,2024
+# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:31:15 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Memoire_Data
+# -- Compiling architecture TEST of tb_Memoire_Data
+# -- Loading entity Memoire_Data
+# End time: 15:42:32 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:31:16 on May 06,2024, Elapsed time: 0:01:17
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 23:31:16 on May 06,2024
+# vsim -novopt tb_Memoire_Data 
+# Start time: 15:42:32 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 3).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: C flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
+# 0 ps
+# 36750 ns
+quit -sim
+# End time: 15:45:13 on May 07,2024, Elapsed time: 0:02:41
+# Errors: 0, Warnings: 0
+quit -sim
+do simumemory.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:33:18 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# Start time: 15:45:18 on May 07,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:33:18 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Data
+# -- Compiling architecture RTL of Memoire_Data
+# End time: 15:45:18 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:33:18 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
+# Start time: 15:45:18 on May 07,2024
+# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:33:18 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Memoire_Data
+# -- Compiling architecture TEST of tb_Memoire_Data
+# -- Loading entity Memoire_Data
+# End time: 15:45:18 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:33:20 on May 06,2024, Elapsed time: 0:02:04
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 23:33:20 on May 06,2024
+# vsim -novopt tb_Memoire_Data 
+# Start time: 15:45:18 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 3).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: C flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
+# 0 ps
+# 36750 ns
+quit -sim
+# End time: 15:46:03 on May 07,2024, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0
+do simumemory.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:35:19 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# Start time: 15:46:07 on May 07,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:35:19 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Data
+# -- Compiling architecture RTL of Memoire_Data
+# End time: 15:46:07 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:35:19 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
+# Start time: 15:46:07 on May 07,2024
+# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:35:19 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Memoire_Data
+# -- Compiling architecture TEST of tb_Memoire_Data
+# -- Loading entity Memoire_Data
+# End time: 15:46:07 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:35:21 on May 06,2024, Elapsed time: 0:02:01
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 23:35:21 on May 06,2024
+# vsim -novopt tb_Memoire_Data 
+# Start time: 15:46:07 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 3).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: C flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
+# 0 ps
+# 36750 ns
+quit -sim
+# End time: 15:47:15 on May 07,2024, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0
+quit -sim
+do simumemory.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:40:07 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# Start time: 15:47:20 on May 07,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:40:07 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Data
+# -- Compiling architecture RTL of Memoire_Data
+# End time: 15:47:20 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:40:07 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
+# Start time: 15:47:21 on May 07,2024
+# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:40:07 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Memoire_Data
+# -- Compiling architecture TEST of tb_Memoire_Data
+# -- Loading entity Memoire_Data
+# End time: 15:47:21 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:40:09 on May 06,2024, Elapsed time: 0:04:48
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 23:40:09 on May 06,2024
+# vsim -novopt tb_Memoire_Data 
+# Start time: 15:47:21 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 3).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
+# 0 ps
+# 36750 ns
+quit -sim
+# End time: 16:12:25 on May 07,2024, Elapsed time: 0:25:04
+# Errors: 0, Warnings: 0
+quit -sim
+do simumemory.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:41:46 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# Start time: 16:12:29 on May 07,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:41:46 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Data
+# -- Compiling architecture RTL of Memoire_Data
+# End time: 16:12:29 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:41:47 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
+# Start time: 16:12:29 on May 07,2024
+# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:41:47 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Memoire_Data
+# -- Compiling architecture TEST of tb_Memoire_Data
+# -- Loading entity Memoire_Data
+# End time: 16:12:29 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:41:48 on May 06,2024, Elapsed time: 0:01:39
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_ALU 
-# Start time: 23:41:49 on May 06,2024
+# vsim -novopt tb_Memoire_Data 
+# Start time: 16:12:29 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 3).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
+# 0 ps
+# 36750 ns
+do simumemory.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:42:55 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
+# Start time: 16:20:36 on May 07,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:42:55 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Data
+# -- Compiling architecture RTL of Memoire_Data
+# End time: 16:20:36 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:42:55 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
+# Start time: 16:20:36 on May 07,2024
+# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:42:55 on May 06,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Memoire_Data
+# -- Compiling architecture TEST of tb_Memoire_Data
+# -- Loading entity Memoire_Data
+# End time: 16:20:36 on May 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 23:42:57 on May 06,2024, Elapsed time: 0:01:08
+# End time: 16:20:37 on May 07,2024, Elapsed time: 0:08:08
 # Errors: 0, Warnings: 0
-# vsim -novopt tb_ALU 
-# Start time: 23:42:57 on May 06,2024
+# vsim -novopt tb_Memoire_Data 
+# Start time: 16:20:38 on May 07,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:12 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:50:12 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:12 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:50:12 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 23:50:14 on May 06,2024, Elapsed time: 0:07:17
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_ALU 
-# Start time: 23:50:14 on May 06,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 0).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: Addition operation incorrect
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: N flag incorrect
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: Z flag incorrect
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: V flag incorrect
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:52:37 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:52:37 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:52:37 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:52:37 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 23:52:39 on May 06,2024, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 4
-# vsim -novopt tb_ALU 
-# Start time: 23:52:39 on May 06,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 0).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: Substraction operation incorrect
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: Z flag incorrect
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:54:05 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:54:05 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:54:05 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# ** Error: tb_ALU.vhd(53): (vcom-1136) Unknown identifier "B".
-# ** Error: tb_ALU.vhd(53): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: tb_ALU.vhd(64): VHDL Compiler exiting
-# End time: 23:54:05 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simualu.do line 5
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 tb_ALU.vhd"
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:54:29 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:54:29 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:54:29 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:54:30 on May 06,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 23:54:31 on May 06,2024, Elapsed time: 0:01:52
-# Errors: 6, Warnings: 2
-# vsim -novopt tb_ALU 
-# Start time: 23:54:31 on May 06,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 0).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:55:54 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:55:54 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:55:54 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:55:55 on May 06,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 23:55:57 on May 06,2024, Elapsed time: 0:01:26
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_ALU 
-# Start time: 23:55:57 on May 06,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be X).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: Z flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: V flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:57:03 on May 06,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 23:57:03 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:57:03 on May 06,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 23:57:03 on May 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 23:57:05 on May 06,2024, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 2
-# vsim -novopt tb_ALU 
-# Start time: 23:57:05 on May 06,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be X).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 1 failed: V flag incorrect
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:11:29 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:11:29 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:11:29 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:11:29 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:11:31 on May 07,2024, Elapsed time: 0:14:26
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 00:11:31 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be X).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 3 failed: C flag incorrect
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 3 failed: V flag incorrect
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:12:39 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:12:39 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:12:39 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:12:39 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:12:41 on May 07,2024, Elapsed time: 0:01:10
-# Errors: 0, Warnings: 2
-# vsim -novopt tb_ALU 
-# Start time: 00:12:41 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output (should be X).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:15:57 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:15:57 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:15:57 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:15:57 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:15:59 on May 07,2024, Elapsed time: 0:03:18
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_ALU 
-# Start time: 00:15:59 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output for Addition (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=B (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for Substraction (should be 0x40000000).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=A (should be 0x80000000).
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 4 failed: C flag incorrect
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:18:23 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:18:23 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:18:23 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:18:23 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:18:25 on May 07,2024, Elapsed time: 0:02:26
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 00:18:25 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output for Addition (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=B (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for Substraction (should be 0x40000000).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 3 failed: C flag incorrect
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=A (should be 0x80000000).
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:22:00 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:22:00 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:22:00 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:22:01 on May 07,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 00:22:03 on May 07,2024, Elapsed time: 0:03:38
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 00:22:03 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output for Addition (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=B (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for Substraction (should be 0x40000000).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 3 failed: C flag incorrect
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=A (should be 0x80000000).
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:34:37 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:34:37 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:34:37 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:34:37 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:34:39 on May 07,2024, Elapsed time: 0:12:36
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 00:34:39 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output for Addition (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=B (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for Substraction (should be 0x40000000).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 3 failed: C flag incorrect
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=A (should be 0x80000000).
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:54:14 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:54:14 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:54:14 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:54:14 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:54:16 on May 07,2024, Elapsed time: 0:19:37
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 00:54:16 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output for Addition (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=B (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for Substraction (should be 0x40000000).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Warning: Test 3 failed: C flag incorrect
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=A (should be 0x80000000).
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
-do simualu.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:07 on May 07,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture RTL of ALU
-# End time: 00:55:07 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:07 on May 07,2024
-# vcom -reportprogress 300 -93 tb_ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_ALU
-# -- Compiling architecture TB_ARCH of tb_ALU
-# -- Loading entity ALU
-# End time: 00:55:07 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 00:55:09 on May 07,2024, Elapsed time: 0:00:53
-# Errors: 0, Warnings: 1
-# vsim -novopt tb_ALU 
-# Start time: 00:55:09 on May 07,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_alu(tb_arch)
-# Loading work.alu(rtl)
-# ** Note: Checking output for Addition (should be 0x20000000).
-#    Time: 10 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=B (should be 0).
-#    Time: 20 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for Substraction (should be 0x40000000).
-#    Time: 30 ns  Iteration: 0  Instance: /tb_alu
-# ** Note: Checking output for S=A (should be 0x80000000).
-#    Time: 40 ns  Iteration: 0  Instance: /tb_alu
+# Loading work.tb_memoire_data(test)
+# Loading work.memoire_data(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
+# 0 ps
+# 36750 ns
