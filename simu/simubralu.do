@@ -16,15 +16,16 @@ add wave tb_Reset
 add wave -radix hexadecimal tb_RA
 add wave -radix hexadecimal tb_RB
 add wave -radix hexadecimal tb_RW
+add wave -radix hexadecimal tb_A
+add wave -radix hexadecimal tb_B
+add wave -radix hexadecimal tb_W
 add wave tb_WE
 add wave tb_OP
-add wave -radix hexadecimal tb_W
 add wave tb_N
 add wave tb_Z
 add wave tb_C
 add wave tb_V
-add wave -radix hexadecimal tb_A
-add wave -radix hexadecimal tb_B
+
 
 
 

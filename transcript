@@ -1,0 +1,8 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# vsim -gui . 
+# Start time: 15:39:13 on May 23,2024
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 15:39:14 on May 23,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

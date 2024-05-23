@@ -46,10 +46,19 @@ BEGIN
         tb_WrEn <= '1';
         tb_DataIn <= x"11001100";
         WAIT FOR Period;
-
-        tb_Addr <= "000010";
         tb_WrEn <= '0';
         WAIT FOR Period;
+        ASSERT tb_DataOut = tb_DataIn REPORT "Test 1 failed: register DataOut should be equal to 0x11001100" SEVERITY WARNING;
+
+        tb_Addr <= "000010";
+        WAIT FOR Period;
+        ASSERT tb_DataOut = x"00000000" REPORT "Test 2 failed: register DataOut should be equal to 0x00000000" SEVERITY WARNING;
+
+        tb_Addr <= "000010";
+        tb_WrEn <= '1';
+        tb_DataIn <= x"11111100";
+        WAIT FOR Period;
+        ASSERT tb_DataOut = tb_DataIn REPORT "Test 3 failed: register DataOut should be equal to 0x11111100" SEVERITY WARNING;
 
         REPORT "End of test. Verify that no error was reported.";
         Done <= true;

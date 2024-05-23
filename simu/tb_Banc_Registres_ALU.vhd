@@ -18,8 +18,8 @@ ARCHITECTURE TEST OF tb_Banc_Registres_ALU IS
     SIGNAL tb_OP : STD_LOGIC_VECTOR(2 DOWNTO 0) := "000";
     SIGNAL tb_W : STD_LOGIC_VECTOR(31 DOWNTO 0):= (others => '0');
     SIGNAL tb_N, tb_Z, tb_C, tb_V : STD_LOGIC;
-    SIGNAL tb_A : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    SIGNAL tb_B : STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SIGNAL tb_A : STD_LOGIC_VECTOR(31 DOWNTO 0):= (others => '0');
+    SIGNAL tb_B : STD_LOGIC_VECTOR(31 DOWNTO 0):= (others => '0');
     SIGNAL Done : BOOLEAN;
 BEGIN
 
@@ -28,7 +28,7 @@ BEGIN
         NOT tb_CLK AFTER Period / 2;
     tb_Reset <= '1', '0' AFTER Period;
     -- Unit Under Test instanciation
-    entity_BR : ENTITY work.Banc_Registres
+    UUT : ENTITY work.Banc_Registres
         PORT MAP(
             CLK => tb_CLK,
             Reset => tb_Reset,
@@ -53,17 +53,20 @@ BEGIN
             V => tb_V
         );
     -- Control Simulation and check outputs
-    PROCESS BEGIN
+    PROCESS     
+    
+    BEGIN
         WAIT FOR Period;
         -- R(1) = R(15)
         tb_RA <= "1111";
-        tb_RB <= "0000";
         tb_RW <= "0001";
         tb_WE <= '1';
         tb_OP <= "011";
         WAIT FOR Period;
         tb_WE <= '0';
         WAIT FOR Period;
+        ASSERT tb_A = tb_W REPORT "Test 1 failed: register W should be equal to 0x00000030" SEVERITY WARNING;
+
 
         -- R(1) = R(1) + R(15)
         tb_RA <= "0001";
@@ -74,6 +77,7 @@ BEGIN
         WAIT FOR Period;
         tb_WE <= '0';
         WAIT FOR Period;
+        ASSERT tb_W = std_logic_vector(signed(tb_A) + signed(tb_B)) REPORT "Test 2 failed: register W should be equal to 0x00000060" SEVERITY WARNING;
 
         -- R(2) = R(1) + R(15)
         tb_RA <= "0001";
@@ -84,16 +88,19 @@ BEGIN
         WAIT FOR Period;
         tb_WE <= '0';
         WAIT FOR Period;
+        ASSERT tb_W = std_logic_vector(signed(tb_A) + signed(tb_B)) REPORT "Test 3 failed: register W should be equal to 0x00000090" SEVERITY WARNING;
 
         -- R(3) = R(1) – R(15)
+        tb_WE <= '1';
         tb_RA <= "0001";
         tb_RB <= "1111";
         tb_RW <= "0011";
-        tb_WE <= '1';
         tb_OP <= "010";
         WAIT FOR Period;
         tb_WE <= '0';
         WAIT FOR Period;
+        ASSERT tb_W = std_logic_vector(signed(tb_A) - signed(tb_B)) REPORT "Test 4 failed: register W should be equal to 0x00000030" SEVERITY WARNING;
+
 
         -- R(5) = R(7) – R(15)
         tb_RA <= "0111";
@@ -104,6 +111,8 @@ BEGIN
         WAIT FOR Period;
         tb_WE <= '0';
         WAIT FOR Period;
+        ASSERT tb_W = std_logic_vector(signed(tb_A) - signed(tb_B)) REPORT "Test 5 failed: register W should be equal to 0xFFFFFFD0" SEVERITY WARNING;
+        
 
         REPORT "End of test. Verify that no error was reported.";
         Done <= true;

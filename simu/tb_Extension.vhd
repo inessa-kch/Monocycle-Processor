@@ -31,7 +31,6 @@ BEGIN
         ASSERT tb_S = "11111111111111111111111110001000" REPORT "Test failed: Extension incorrect" SEVERITY WARNING;
   
 
-
         REPORT "End of test. Verify that no error was reported.";
 
         WAIT;
