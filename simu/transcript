@@ -1,116 +1,18 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # vsim -gui . 
-# Start time: 17:36:28 on May 23,2024
+# Start time: 10:43:34 on Jun 03,2024
 # ** Error (suppressible): (vsim-19) Failed to access library '' at "".
 # Invalid argument. (errno = EINVAL)
 # Error loading design
-# End time: 17:36:28 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:43:38 on Jun 03,2024, Elapsed time: 0:00:04
 # Errors: 1, Warnings: 0
-do simumemory.do
+simu simuudi.do
+# invalid command name "simu"
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:37:10 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 17:37:11 on May 23,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:37:11 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Memoire_Data
-# -- Compiling architecture TEST of tb_Memoire_Data
-# -- Loading entity Memoire_Data
-# End time: 17:37:11 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_Memoire_Data 
-# Start time: 17:37:11 on May 23,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_memoire_data(test)
-# Loading work.memoire_data(rtl)
-# ** Note: End of test. Verify that no error was reported.
-#    Time: 30 us  Iteration: 0  Instance: /tb_memoire_data
-# 0 ps
-# 36750 ns
-do simumemory.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:43:44 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 17:43:45 on May 23,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:43:45 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Memoire_Data.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Memoire_Data
-# -- Compiling architecture TEST of tb_Memoire_Data
-# -- Loading entity Memoire_Data
-# End time: 17:43:45 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:43:46 on May 23,2024, Elapsed time: 0:06:35
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_Memoire_Data 
-# Start time: 17:43:46 on May 23,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_memoire_data(test)
-# Loading work.memoire_data(rtl)
-# ** Note: End of test. Verify that no error was reported.
-#    Time: 50 us  Iteration: 0  Instance: /tb_memoire_data
-# 0 ps
-# 57750 ns
-do simuudt.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 17:46:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 17:46:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:43 on May 23,2024
+# Start time: 10:43:56 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -118,108 +20,40 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 17:46:43 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:43:57 on Jun 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:43 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:43:57 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 17:46:43 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:43:57 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:43 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:43:57 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 17:46:43 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:43 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
-# -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 17:46:43 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:43 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 17:46:43 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:46:44 on May 23,2024, Elapsed time: 0:02:58
-# Errors: 0, Warnings: 0
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 17:46:44 on May 23,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
-# Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Note: End of test. Verify that no error was reported.
-#    Time: 20 us  Iteration: 0  Instance: /tb_unite_de_traitement
-# 0 ps
-# 26250 ns
-do simuudt.do
+# -- Compiling entity Unite_des_Instructions
+# ** Error: ../src/Unite_des_Instructions.vhd(14): near ")": (vcom-1576) expecting IDENTIFIER.
+# End time: 10:43:57 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simuudi.do line 6
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 ../src/Unite_des_Instructions.vhd"
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:21 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 17:59:21 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:21 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 17:59:21 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:21 on May 23,2024
+# Start time: 10:44:14 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -227,93 +61,57 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 17:59:21 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:44:14 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:21 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:44:14 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 17:59:21 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:44:14 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:21 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:44:14 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 17:59:21 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:21 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 17:59:21 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:44:14 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:22 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:44:15 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# ** Error: tb_Unite_de_Traitement.vhd(127): (vcom-1136) Unknown identifier "N".
-# ** Error: tb_Unite_de_Traitement.vhd(127): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: tb_Unite_de_Traitement.vhd(141): VHDL Compiler exiting
-# End time: 17:59:22 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# ** Error: tb_Unite_des_Instructions.vhd(32): near ">": syntax error
+# ** Error (suppressible): tb_Unite_des_Instructions.vhd(46): (vcom-1272) Length of expected is 32; length of actual is 24.
+# ** Error: tb_Unite_des_Instructions.vhd(67): VHDL Compiler exiting
+# End time: 10:44:15 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
 # ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simuudt.do line 11
+# Error in macro ./simuudi.do line 8
 # C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
-# "vcom -93 tb_Unite_de_Traitement.vhd"
-do simuudt.do
+# "vcom -93 tb_Unite_des_Instructions.vhd"
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:38 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 17:59:38 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:38 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 17:59:38 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:38 on May 23,2024
+# Start time: 10:44:36 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -321,310 +119,57 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 17:59:38 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:44:36 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:39 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:44:36 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 17:59:39 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:44:36 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:39 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:44:36 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 17:59:39 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:39 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 17:59:39 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:44:36 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:39 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:44:36 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 17:59:39 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:59:41 on May 23,2024, Elapsed time: 0:12:57
-# Errors: 6, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 17:59:41 on May 23,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
-# Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Note: End of test. Verify that no error was reported.
-#    Time: 18 ns  Iteration: 0  Instance: /tb_unite_de_traitement
-# 0 ps
-# 21 ns
-do simuudt.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:54 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 18:00:54 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:54 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 18:00:54 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:54 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Extension.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Extension
-# -- Compiling architecture BEHAVIORAL of Extension
-# End time: 18:00:54 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:55 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 18:00:55 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:55 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 18:00:55 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:55 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
-# -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 18:00:55 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:00:55 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 18:00:55 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 18:00:57 on May 23,2024, Elapsed time: 0:01:16
-# Errors: 0, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 18:00:57 on May 23,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
-# Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Note: End of test. Verify that no error was reported.
-#    Time: 18 ns  Iteration: 0  Instance: /tb_unite_de_traitement
-# 0 ps
-# 21 ns
-do simuudt.do
-# Simulation script for ModelSim 
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:41 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 18:11:41 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:41 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 18:11:41 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Extension.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Extension
-# -- Compiling architecture BEHAVIORAL of Extension
-# End time: 18:11:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 18:11:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 18:11:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
-# -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 18:11:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:11:42 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# ** Error: tb_Unite_de_Traitement.vhd(157): near "tb_RW": (vcom-1576) expecting ';'.
-# ** Error: tb_Unite_de_Traitement.vhd(168): VHDL Compiler exiting
-# End time: 18:11:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# ** Error (suppressible): tb_Unite_des_Instructions.vhd(33): (vcom-1272) Length of formal "Offset" is 24; length of actual is 32.
+# ** Error (suppressible): tb_Unite_des_Instructions.vhd(46): (vcom-1272) Length of expected is 32; length of actual is 24.
+# ** Error: tb_Unite_des_Instructions.vhd(67): VHDL Compiler exiting
+# End time: 10:44:36 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
 # ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./simuudt.do line 11
+# Error in macro ./simuudi.do line 8
 # C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
-# "vcom -93 tb_Unite_de_Traitement.vhd"
-do simuudt.do
+# "vcom -93 tb_Unite_des_Instructions.vhd"
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 18:12:07 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 18:12:07 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
+# Start time: 10:45:16 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -632,108 +177,63 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 18:12:07 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:45:16 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:45:16 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 18:12:07 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:45:16 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:45:16 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 18:12:07 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 18:12:07 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:45:16 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:07 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:45:16 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 18:12:08 on May 23,2024, Elapsed time: 0:00:01
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 10:45:16 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 18:12:09 on May 23,2024, Elapsed time: 0:11:12
-# Errors: 5, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 18:12:09 on May 23,2024
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 10:45:16 on Jun 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
 # Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
+# Loading work.memoire_instruction(rtl)
 # ** Note: End of test. Verify that no error was reported.
-#    Time: 30 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+#    Time: 124 ns  Iteration: 0  Instance: /tb_unite_des_instructions
 # 0 ps
-# 33600 ps
-do simuudt.do
+# 132300 ps
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 18:24:20 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 18:24:20 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
+# Start time: 10:46:15 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -741,108 +241,65 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 18:24:20 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:46:15 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:46:15 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 18:24:20 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:46:15 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:46:15 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 18:24:20 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 18:24:20 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:46:15 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:24:20 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:46:15 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 18:24:21 on May 23,2024, Elapsed time: 0:00:01
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 10:46:15 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 18:24:22 on May 23,2024, Elapsed time: 0:12:13
-# Errors: 0, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 18:24:22 on May 23,2024
+# End time: 10:46:17 on Jun 03,2024, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 10:46:17 on Jun 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
 # Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
+# Loading work.memoire_instruction(rtl)
 # ** Note: End of test. Verify that no error was reported.
-#    Time: 42 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+#    Time: 124 ns  Iteration: 0  Instance: /tb_unite_des_instructions
 # 0 ps
-# 46200 ps
-do simuudt.do
+# 132300 ps
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 21:04:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:42 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 21:04:42 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:42 on May 23,2024
+# Start time: 10:50:17 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -850,112 +307,65 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 21:04:42 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:50:18 on Jun 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:43 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:50:18 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 21:04:43 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:50:18 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:43 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:50:18 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 21:04:43 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:43 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 21:04:43 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:50:18 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:04:43 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:50:18 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 21:04:43 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 10:50:18 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 21:04:45 on May 23,2024, Elapsed time: 2:40:23
-# Errors: 0, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 21:04:45 on May 23,2024
+# End time: 10:50:20 on Jun 03,2024, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 10:50:20 on Jun 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
 # Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Error: N is wrong after substraction of registers
-#    Time: 13 ns  Iteration: 0  Instance: /tb_unite_de_traitement
-# ** Error: N is wrong after moving a register value
-#    Time: 25 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+# Loading work.memoire_instruction(rtl)
 # ** Note: End of test. Verify that no error was reported.
-#    Time: 42 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+#    Time: 124 ns  Iteration: 0  Instance: /tb_unite_des_instructions
 # 0 ps
-# 46200 ps
-do simuudt.do
+# 132300 ps
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
+# Start time: 10:54:03 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -963,110 +373,69 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:54:03 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:54:03 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:54:03 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:54:04 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:54:04 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:32:31 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:54:04 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 21:32:31 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 10:54:04 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 21:32:32 on May 23,2024, Elapsed time: 0:27:47
-# Errors: 2, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 21:32:32 on May 23,2024
+# End time: 10:54:06 on Jun 03,2024, Elapsed time: 0:03:46
+# Errors: 0, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 10:54:06 on Jun 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
 # Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Error: Z is incorrect after substraction of register and immediate value
-#    Time: 19 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+# Loading work.memoire_instruction(rtl)
 # ** Note: End of test. Verify that no error was reported.
-#    Time: 42 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+#    Time: 124 ns  Iteration: 0  Instance: /tb_unite_des_instructions
 # 0 ps
-# 46200 ps
-do simuudt.do
+# 132300 ps
+simu simuudi.do
+# invalid command name "simu"
+simu simuudi.do
+# invalid command name "simu"
+do simuudi.do
 # Simulation script for ModelSim 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:03 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIORAL of ALU
-# End time: 21:33:03 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:03 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Banc_Registres.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Banc_Registres
-# -- Compiling architecture RTL of Banc_Registres
-# End time: 21:33:03 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:04 on May 23,2024
+# Start time: 10:56:08 on Jun 03,2024
 # vcom -reportprogress 300 -93 ../src/Extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1074,80 +443,263 @@ do simuudt.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Extension
 # -- Compiling architecture BEHAVIORAL of Extension
-# End time: 21:33:04 on May 23,2024, Elapsed time: 0:00:00
+# End time: 10:56:08 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:04 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Memoire_Data.vhd 
+# Start time: 10:56:08 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Memoire_Data
-# -- Compiling architecture RTL of Memoire_Data
-# End time: 21:33:04 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 10:56:08 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:04 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Mux2v1.vhd 
+# Start time: 10:56:09 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux2v1
-# -- Compiling architecture BEHAVIORAL of Mux2v1
-# End time: 21:33:04 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:04 on May 23,2024
-# vcom -reportprogress 300 -93 ../src/Unite_de_Traitement.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Unite_de_Traitement
-# -- Compiling architecture RTL of Unite_de_Traitement
-# -- Loading entity Banc_Registres
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
 # -- Loading entity Extension
-# -- Loading entity Mux2v1
-# -- Loading entity ALU
-# -- Loading entity Memoire_Data
-# End time: 21:33:04 on May 23,2024, Elapsed time: 0:00:00
+# -- Loading entity Memoire_Instruction
+# End time: 10:56:09 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:33:04 on May 23,2024
-# vcom -reportprogress 300 -93 tb_Unite_de_Traitement.vhd 
+# Start time: 10:56:09 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Unite_de_Traitement
-# -- Compiling architecture TEST of tb_Unite_de_Traitement
-# -- Loading entity Unite_de_Traitement
-# End time: 21:33:04 on May 23,2024, Elapsed time: 0:00:00
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 10:56:09 on Jun 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 21:33:06 on May 23,2024, Elapsed time: 0:00:34
-# Errors: 1, Warnings: 2
-# vsim -novopt tb_Unite_de_Traitement 
-# Start time: 21:33:06 on May 23,2024
+# End time: 10:56:11 on Jun 03,2024, Elapsed time: 0:02:05
+# Errors: 2, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 10:56:11 on Jun 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_unite_de_traitement(test)
-# Loading work.unite_de_traitement(rtl)
-# Loading work.banc_registres(rtl)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
 # Loading work.extension(behavioral)
-# Loading work.mux2v1(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.memoire_data(rtl)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_unite_de_traitement/entity_UDT/entity_Memory
+# Loading work.memoire_instruction(rtl)
 # ** Note: End of test. Verify that no error was reported.
-#    Time: 42 ns  Iteration: 0  Instance: /tb_unite_de_traitement
+#    Time: 128 ns  Iteration: 0  Instance: /tb_unite_des_instructions
 # 0 ps
-# 46200 ps
-# End time: 22:01:47 on May 23,2024, Elapsed time: 0:28:41
-# Errors: 0, Warnings: 2
+# 136500 ps
+do simuudi.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:15 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Extension.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Extension
+# -- Compiling architecture BEHAVIORAL of Extension
+# End time: 11:05:15 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:15 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 11:05:16 on Jun 03,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:16 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
+# -- Loading entity Extension
+# -- Loading entity Memoire_Instruction
+# End time: 11:05:16 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:16 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 11:05:16 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:05:18 on Jun 03,2024, Elapsed time: 0:09:07
+# Errors: 0, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 11:05:18 on Jun 03,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
+# Loading work.extension(behavioral)
+# Loading work.memoire_instruction(rtl)
+# ** Error:  Test 1 : Instruction is incorrect
+#    Time: 8 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# ** Error:  Test 2 : Instruction is incorrect
+#    Time: 20 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# ** Error:  Test 3 : Instruction is incorrect
+#    Time: 28 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 32 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# 0 ps
+# 35700 ps
+do simuudi.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:08:41 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Extension.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Extension
+# -- Compiling architecture BEHAVIORAL of Extension
+# End time: 11:08:41 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:08:41 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 11:08:42 on Jun 03,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:08:42 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
+# -- Loading entity Extension
+# -- Loading entity Memoire_Instruction
+# End time: 11:08:42 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:08:42 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 11:08:42 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:08:44 on Jun 03,2024, Elapsed time: 0:03:26
+# Errors: 3, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 11:08:44 on Jun 03,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
+# Loading work.extension(behavioral)
+# Loading work.memoire_instruction(rtl)
+# ** Error:  Test 2 : Instruction is incorrect
+#    Time: 8 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 32 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# 0 ps
+# 35700 ps
+do simuudi.do
+# Simulation script for ModelSim 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:09 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Extension.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Extension
+# -- Compiling architecture BEHAVIORAL of Extension
+# End time: 11:10:09 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:09 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Memoire_Instruction.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Memoire_Instruction
+# -- Compiling architecture RTL of Memoire_Instruction
+# End time: 11:10:09 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:09 on Jun 03,2024
+# vcom -reportprogress 300 -93 ../src/Unite_des_Instructions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Unite_des_Instructions
+# -- Compiling architecture RTL of Unite_des_Instructions
+# -- Loading entity Extension
+# -- Loading entity Memoire_Instruction
+# End time: 11:10:09 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:09 on Jun 03,2024
+# vcom -reportprogress 300 -93 tb_Unite_des_Instructions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Unite_des_Instructions
+# -- Compiling architecture TEST of tb_Unite_des_Instructions
+# -- Loading entity Unite_des_Instructions
+# End time: 11:10:09 on Jun 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:10:11 on Jun 03,2024, Elapsed time: 0:01:27
+# Errors: 1, Warnings: 0
+# vsim -novopt tb_Unite_des_Instructions 
+# Start time: 11:10:11 on Jun 03,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_unite_des_instructions(test)
+# Loading work.unite_des_instructions(rtl)
+# Loading work.extension(behavioral)
+# Loading work.memoire_instruction(rtl)
+# ** Note: End of test. Verify that no error was reported.
+#    Time: 32 ns  Iteration: 0  Instance: /tb_unite_des_instructions
+# 0 ps
+# 35700 ps

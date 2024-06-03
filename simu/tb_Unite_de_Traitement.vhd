@@ -11,7 +11,7 @@ END ENTITY;
 ---------------------------------------
 ARCHITECTURE TEST OF tb_Unite_de_Traitement IS
     ---------------------------------------
-    CONSTANT Period : TIME := 4 ns; -- speed up simulation with a 100kHz clock
+    CONSTANT Period : TIME := 4 ns; 
     SIGNAL tb_CLK : STD_LOGIC := '0';
     SIGNAL tb_Reset : STD_LOGIC := '0';
     SIGNAL tb_RegWr : STD_LOGIC := '0'; --write-enable input connected to the register bank

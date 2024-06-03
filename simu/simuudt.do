@@ -14,5 +14,6 @@ vsim -novopt tb_Unite_de_Traitement
 
 
 add wave *
+
 run -a
 wave zoom full
