@@ -25,8 +25,20 @@ ARCHITECTURE RTL OF Memoire_Data IS
         VARIABLE result : MemoryType;
     BEGIN
         FOR i IN 63 DOWNTO 0 LOOP
-            result(i) := (OTHERS => '0');
+            result(i) := X"00000000";
         END LOOP;
+        result(32):=X"00000001";
+        result(33):=X"00000001";
+        result(34):=X"00000001";
+        result(35):=X"00000001";
+        result(36):=X"00000001";
+        result(37):=X"00000001";
+        result(38):=X"00000001";
+        result(39):=X"00000001";
+        result(40):=X"00000001";
+        result(41):=X"00000001";
+        result(42):=X"00000001";
+
         RETURN result;
     END init_memoire;
 

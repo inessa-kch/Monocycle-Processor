@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -18.067
+TNS   : -31567.710
+
+Type  : Slow 1200mV 85C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : -7.538
+TNS   : -37.837
+
+Type  : Slow 1200mV 85C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : -5.813
+TNS   : -11.687
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : -0.653
+TNS   : -0.760
+
+Type  : Slow 1200mV 85C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : -0.189
+TNS   : -0.189
+
+Type  : Slow 1200mV 85C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : 1.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -3267.781
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -16.828
+TNS   : -29305.750
+
+Type  : Slow 1200mV 0C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : -7.023
+TNS   : -35.216
+
+Type  : Slow 1200mV 0C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : -5.361
+TNS   : -10.540
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.599
+TNS   : -1.023
+
+Type  : Slow 1200mV 0C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : -0.194
+TNS   : -0.194
+
+Type  : Slow 1200mV 0C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : 0.917
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -3267.781
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -7.183
+TNS   : -11920.711
+
+Type  : Fast 1200mV 0C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : -2.695
+TNS   : -10.929
+
+Type  : Fast 1200mV 0C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : -2.149
+TNS   : -2.587
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.528
+TNS   : -0.561
+
+Type  : Fast 1200mV 0C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : -0.066
+TNS   : -0.066
+
+Type  : Fast 1200mV 0C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -2405.271
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
+Slack : 0.369
+TNS   : 0.000
+
+------------------------------------------------------------

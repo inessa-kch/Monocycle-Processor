@@ -21,7 +21,10 @@ ENTITY Unite_de_Traitement IS
         N : OUT STD_LOGIC;
         C : OUT STD_LOGIC;
         Z : OUT STD_LOGIC;
-        V : OUT STD_LOGIC
+        V : OUT STD_LOGIC;
+        Afficheur : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+        RegAff : in STD_LOGIC;
+        RegSel : IN STD_LOGIC
     );
 END ENTITY Unite_de_Traitement;
 ---------------------------------------
@@ -34,6 +37,7 @@ ARCHITECTURE RTL OF Unite_de_Traitement IS
     SIGNAL DataOut:STD_LOGIC_VECTOR(31 downto 0);
     SIGNAL S_extension:STD_LOGIC_VECTOR(31 downto 0);
     SIGNAL S_mux1:STD_LOGIC_VECTOR(31 downto 0);
+    SIGNAL S_muxrb:STD_LOGIC_VECTOR(3 downto 0);
 BEGIN
 
     entity_Banc_Registres : ENTITY work.Banc_Registres
@@ -42,7 +46,7 @@ BEGIN
             Reset => Reset,
             W => busW,
             RA => RA,
-            RB => RB,
+            RB => S_muxrb,
             RW => RW,
             WE => RegWr,
             A => busA,
@@ -62,6 +66,15 @@ BEGIN
             COM => COM1,
             S => S_mux1
         );
+
+    entity_muxrb : entity work.mux2v1
+    Generic map(N=>4)
+    Port map(
+        A=>RB,
+        B=>RW,
+        COM=>RegSel,
+        S=>S_muxrb
+    );    
 
     entity_ALU : ENTITY work.ALU
         PORT MAP(
@@ -92,6 +105,15 @@ BEGIN
             COM => COM2,
             S => busW
         );
+
+    entity_Afficheur : ENTITY work.Registre
+        PORT MAP(
+            CLK => CLK,
+            Reset => Reset,
+            DataIn => busB,
+            WE => RegAff,
+            DataOut => Afficheur
+        );    
 
 END ARCHITECTURE;
 
