@@ -18,10 +18,12 @@ END ENTITY Top_Processeur;
 ARCHITECTURE RTL OF Top_Processeur IS
     ---------------------------------------
     SIGNAL rst, clk, pol : STD_LOGIC;
+    SIGNAL irq0, irq1 : STD_LOGIC;
     SIGNAL afficheur_int: STD_LOGIC_VECTOR(31 DOWNTO 0);
 BEGIN
-
-    rst <= NOT KEY(0);
+    rst <= SW(0);
+    irq0 <= NOT KEY(0);
+    irq1 <= NOT KEY(1);
     clk <= CLOCK_50;
     pol <= SW(9);
 
@@ -29,6 +31,8 @@ BEGIN
         PORT MAP (
             CLK=>clk,
             Reset=>rst,
+            IRQ0=>irq0,
+            IRQ1=>irq1,
             Afficheur=>afficheur_int
         );
 

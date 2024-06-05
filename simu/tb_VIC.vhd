@@ -54,7 +54,15 @@ BEGIN
         wait for Period;
 
         tb_IRQ_SERV<= '1';
+        tb_IRQ1<= '0';
+        tb_IRQ0 <= '0';
+        wait for 2*Period;
+
+        tb_IRQ0<= '1';
         wait for Period;
+
+
+
 
 
 

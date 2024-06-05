@@ -3,111 +3,111 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -18.067
-TNS   : -31567.710
+Slack : -18.843
+TNS   : -38483.018
 
-Type  : Slow 1200mV 85C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : -7.538
-TNS   : -37.837
+Type  : Slow 1200mV 85C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : -6.840
+TNS   : -49.859
 
-Type  : Slow 1200mV 85C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : -5.813
-TNS   : -11.687
+Type  : Slow 1200mV 85C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : -4.016
+TNS   : -25.825
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : -0.653
-TNS   : -0.760
+Slack : 0.144
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : -0.189
-TNS   : -0.189
+Type  : Slow 1200mV 85C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : 0.180
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : 1.018
+Type  : Slow 1200mV 85C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : 1.007
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -3267.781
+TNS   : -3719.547
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : 0.435
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : 0.379
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : 0.453
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : 0.448
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -16.828
-TNS   : -29305.750
+Slack : -17.399
+TNS   : -35356.362
 
-Type  : Slow 1200mV 0C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : -7.023
-TNS   : -35.216
+Type  : Slow 1200mV 0C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : -6.457
+TNS   : -46.090
 
-Type  : Slow 1200mV 0C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : -5.361
-TNS   : -10.540
+Type  : Slow 1200mV 0C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : -3.597
+TNS   : -23.127
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.599
-TNS   : -1.023
+Slack : 0.088
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : -0.194
-TNS   : -0.194
+Type  : Slow 1200mV 0C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : 0.214
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : 0.917
+Type  : Slow 1200mV 0C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : 0.900
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -3267.781
+TNS   : -3719.547
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : 0.343
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : 0.319
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : 0.431
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : 0.405
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -7.183
-TNS   : -11920.711
+Slack : -7.807
+TNS   : -15348.892
 
-Type  : Fast 1200mV 0C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : -2.695
-TNS   : -10.929
+Type  : Fast 1200mV 0C Model Setup 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : -2.762
+TNS   : -19.707
 
-Type  : Fast 1200mV 0C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : -2.149
-TNS   : -2.587
+Type  : Fast 1200mV 0C Model Setup 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : -1.476
+TNS   : -8.604
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.528
-TNS   : -0.561
+Slack : -0.304
+TNS   : -0.391
 
-Type  : Fast 1200mV 0C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : -0.066
-TNS   : -0.066
+Type  : Fast 1200mV 0C Model Hold 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : 0.101
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : 0.423
+Type  : Fast 1200mV 0C Model Hold 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : 0.370
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -2405.271
+TNS   : -2739.614
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328'
-Slack : 0.308
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[0]'
+Slack : 0.226
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0]'
-Slack : 0.369
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END'
+Slack : 0.311
 TNS   : 0.000
 
 ------------------------------------------------------------

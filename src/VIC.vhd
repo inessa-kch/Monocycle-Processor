@@ -20,10 +20,15 @@ ARCHITECTURE RTL OF VIC IS
     ---------------------------------------
 signal IRQ0_memo, IRQ1_memo: STD_LOGIC:='0';
 signal IRQ0_prev, IRQ1_prev: STD_LOGIC:='0';
-
+--signal IRQ_SERV: STD_LOGIC;
     ---------------------------------------
 BEGIN
 
+
+    IRQ<= IRQ0_memo or IRQ1_memo;
+    
+    
+    
     process(CLK, Reset)
     begin
         if Reset = '1' then
@@ -31,7 +36,6 @@ BEGIN
             IRQ1_memo <= '0';
             IRQ0_prev <= '0';
             IRQ1_prev <= '0';
-            IRQ <= '0';
             VICPC <= (OTHERS => '0');
         elsif rising_edge(CLK) then
             IRQ0_prev <= IRQ0;
@@ -47,17 +51,18 @@ BEGIN
 
             elsif (IRQ_SERV = '1') THEN
                 IRQ0_memo <= '0';
-                IRQ1_memo <= '0';    
-            else
+                IRQ1_memo <= '0'; 
                 VICPC <= (OTHERS => '0');
+                --IRQ<='0';   
             end if;
+        end if;        
+        -- if IRQ0_memo='1' or IRQ1_memo='1' then 
+        --     IRQ <= '1';
+        -- else
+        --     IRQ <= '0';
+        -- end if;  
 
-            IRQ <= IRQ0_memo or IRQ1_memo;
-
-        end if;  
-
-    end process;
-            
+    end process;     
 
 END RTL;
 

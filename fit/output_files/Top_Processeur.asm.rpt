@@ -1,5 +1,5 @@
 Assembler report for Top_Processeur
-Tue Jun 04 16:03:39 2024
+Wed Jun 05 16:42:35 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/fit/output_files/Top_Processeur.sof
+  5. Assembler Device Options: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/fit/output_files/Top_Processeur.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jun 04 16:03:39 2024 ;
+; Assembler Status      ; Successful - Wed Jun 05 16:42:35 2024 ;
 ; Revision Name         ; Top_Processeur                        ;
 ; Top-level Entity Name ; Top_Processeur                        ;
 ; Family                ; MAX 10                                ;
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                  ;
-+------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                  ;
-+------------------------------------------------------------------------------------------------------------+
-; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/fit/output_files/Top_Processeur.sof ;
-+------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/fit/output_files/Top_Processeur.sof ;
++------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/fit/output_files/Top_Processeur.sof ;
-+----------------+---------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                             ;
-+----------------+---------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x004E29DB                                                                                                          ;
-; Checksum       ; 0x004E29DB                                                                                                          ;
-+----------------+---------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/fit/output_files/Top_Processeur.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                   ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00563DDA                                                                                                                ;
+; Checksum       ; 0x00563DDA                                                                                                                ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,15 +77,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jun 04 16:03:36 2024
+    Info: Processing started: Wed Jun 05 16:42:33 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Top_Processeur -c Top_Processeur
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4692 megabytes
-    Info: Processing ended: Tue Jun 04 16:03:40 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4695 megabytes
+    Info: Processing ended: Wed Jun 05 16:42:35 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -69,6 +69,7 @@ BEGIN
         --sorties du decodeur
         PROCESS (instruction, instr_courante, EtatPSR)
         BEGIN
+        IRQ_END <= '0'; 
             CASE (instr_courante) IS
                 WHEN MOV =>
                     nPCSel <= '0';
@@ -121,6 +122,7 @@ BEGIN
                     RegAff <= '0';
 
                 WHEN STR =>
+                
                     nPCSel <= '0';
                     PSREn <= '0';
                     RegWr <= '0';

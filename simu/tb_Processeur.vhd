@@ -40,12 +40,19 @@ BEGIN
     WAIT FOR Period;
     tb_Reset <= '0';
 
+   
+
+
+    wait for 100*Period;
+
+
     tb_IRQ0 <= '1';
+    wait for Period;
 
+    tb_IRQ0 <= '0';
+    wait for 100*Period;
 
-    wait for 700*Period;
-
-
+    -- wait until tb_afficheur/=x"00000000";
     REPORT "End of test. Verify that no error was reported.";
     Done <= true;
     WAIT;

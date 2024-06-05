@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Top_Processeur
-Tue Jun 04 15:58:24 2024
+Wed Jun 05 16:41:35 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -22,7 +22,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  14. Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux1
  15. Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_muxrb
  16. Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2
- 17. Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_des_Instructions:entity_udi|Extension:entity_extension
+ 17. Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|Extension:entity_extension
  18. Port Connectivity Checks: "Processeur:entity_processeur|Registre:entity_psr"
  19. Port Connectivity Checks: "Processeur:entity_processeur"
  20. Post-Synthesis Netlist Statistics for Top Partition
@@ -53,15 +53,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 04 15:58:24 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 05 16:41:34 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Top_Processeur                              ;
 ; Top-level Entity Name              ; Top_Processeur                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 4,301                                       ;
-;     Total combinational functions  ; 2,058                                       ;
-;     Dedicated logic registers      ; 2,327                                       ;
-; Total registers                    ; 2327                                        ;
+; Total logic elements               ; 5,093                                       ;
+;     Total combinational functions  ; 2,566                                       ;
+;     Dedicated logic registers      ; 2,649                                       ;
+; Total registers                    ; 2649                                        ;
 ; Total pins                         ; 41                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -163,41 +163,44 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 6           ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.3%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.3%      ;
 ;     Processor 5            ;   0.2%      ;
 ;     Processor 6            ;   0.2%      ;
+;     Processor 7            ;   0.2%      ;
+;     Processors 8-12        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+-----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                          ; Library ;
-+-----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------+---------+
-; ../src/Unite_des_Instructions.vhd ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd ;         ;
-; ../src/Unite_de_Traitement.vhd    ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd    ;         ;
-; ../src/Top_Processeur.vhd         ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd         ;         ;
-; ../src/SEVEN_SEG.vhd              ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/SEVEN_SEG.vhd              ;         ;
-; ../src/Registre.vhd               ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Registre.vhd               ;         ;
-; ../src/Processeur.vhd             ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd             ;         ;
-; ../src/Mux2v1.vhd                 ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Mux2v1.vhd                 ;         ;
-; ../src/Memoire_Instruction.vhd    ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Instruction.vhd    ;         ;
-; ../src/Memoire_Data.vhd           ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Data.vhd           ;         ;
-; ../src/Extension.vhd              ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Extension.vhd              ;         ;
-; ../src/Decodeur.vhd               ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd               ;         ;
-; ../src/Banc_Registres.vhd         ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Banc_Registres.vhd         ;         ;
-; ../src/ALU.vhd                    ; yes             ; User VHDL File  ; C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/ALU.vhd                    ;         ;
-+-----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++---------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                    ; Library ;
++---------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; ../src/VIC.vhd                        ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/VIC.vhd                        ;         ;
+; ../src/Unite_des_Instructions_IRQ.vhd ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd ;         ;
+; ../src/Memoire_Instruction_IRQ.vhd    ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Instruction_IRQ.vhd    ;         ;
+; ../src/Unite_de_Traitement.vhd        ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd        ;         ;
+; ../src/Top_Processeur.vhd             ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd             ;         ;
+; ../src/SEVEN_SEG.vhd                  ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/SEVEN_SEG.vhd                  ;         ;
+; ../src/Registre.vhd                   ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Registre.vhd                   ;         ;
+; ../src/Processeur.vhd                 ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd                 ;         ;
+; ../src/Mux2v1.vhd                     ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Mux2v1.vhd                     ;         ;
+; ../src/Memoire_Data.vhd               ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Data.vhd               ;         ;
+; ../src/Extension.vhd                  ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Extension.vhd                  ;         ;
+; ../src/Decodeur.vhd                   ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd                   ;         ;
+; ../src/Banc_Registres.vhd             ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Banc_Registres.vhd             ;         ;
+; ../src/ALU.vhd                        ; yes             ; User VHDL File  ; C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/ALU.vhd                        ;         ;
++---------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -205,20 +208,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 4,301          ;
+; Estimated Total logic elements              ; 5,093          ;
 ;                                             ;                ;
-; Total combinational functions               ; 2058           ;
+; Total combinational functions               ; 2566           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 1870           ;
-;     -- 3 input functions                    ; 133            ;
-;     -- <=2 input functions                  ; 55             ;
+;     -- 4 input functions                    ; 2291           ;
+;     -- 3 input functions                    ; 169            ;
+;     -- <=2 input functions                  ; 106            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 2016           ;
-;     -- arithmetic mode                      ; 42             ;
+;     -- normal mode                          ; 2472           ;
+;     -- arithmetic mode                      ; 94             ;
 ;                                             ;                ;
-; Total registers                             ; 2327           ;
-;     -- Dedicated logic registers            ; 2327           ;
+; Total registers                             ; 2649           ;
+;     -- Dedicated logic registers            ; 2649           ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 41             ;
@@ -226,325 +229,79 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 2327           ;
-; Total fan-out                               ; 17357          ;
+; Maximum fan-out                             ; 2649           ;
+; Total fan-out                               ; 20586          ;
 ; Average fan-out                             ; 3.89           ;
 +---------------------------------------------+----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                    ;
-+---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                   ; Entity Name            ; Library Name ;
-+---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |Top_Processeur                                   ; 2058 (0)            ; 2327 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 41   ; 0            ; 0          ; |Top_Processeur                                                                                                       ; Top_Processeur         ; work         ;
-;    |Processeur:entity_processeur|                 ; 2002 (0)            ; 2327 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur                                                                          ; Processeur             ; work         ;
-;       |Decodeur:entity_decodeur|                  ; 35 (35)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Decodeur:entity_decodeur                                                 ; Decodeur               ; work         ;
-;       |Registre:entity_psr|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Registre:entity_psr                                                      ; Registre               ; work         ;
-;       |Unite_de_Traitement:entity_udt|            ; 1935 (0)            ; 2320 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt                                           ; Unite_de_Traitement    ; work         ;
-;          |ALU:entity_ALU|                         ; 86 (86)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|ALU:entity_ALU                            ; ALU                    ; work         ;
-;          |Banc_Registres:entity_Banc_Registres|   ; 333 (333)           ; 256 (256)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres      ; Banc_Registres         ; work         ;
-;          |Memoire_Data:entity_Memory|             ; 83 (83)             ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory                ; Memoire_Data           ; work         ;
-;          |Mux2v1:entity_mux1|                     ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux1                        ; Mux2v1                 ; work         ;
-;          |Mux2v1:entity_mux2|                     ; 1405 (1405)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2                        ; Mux2v1                 ; work         ;
-;          |Mux2v1:entity_muxrb|                    ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_muxrb                       ; Mux2v1                 ; work         ;
-;          |Registre:entity_Afficheur|              ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Registre:entity_Afficheur                 ; Registre               ; work         ;
-;       |Unite_des_Instructions:entity_udi|         ; 31 (12)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_des_Instructions:entity_udi                                        ; Unite_des_Instructions ; work         ;
-;          |Memoire_Instruction:entity_instruction| ; 19 (19)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_des_Instructions:entity_udi|Memoire_Instruction:entity_instruction ; Memoire_Instruction    ; work         ;
-;    |SEVEN_SEG:entity_HEX0|                        ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX0                                                                                 ; SEVEN_SEG              ; work         ;
-;    |SEVEN_SEG:entity_HEX1|                        ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX1                                                                                 ; SEVEN_SEG              ; work         ;
-;    |SEVEN_SEG:entity_HEX2|                        ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX2                                                                                 ; SEVEN_SEG              ; work         ;
-;    |SEVEN_SEG:entity_HEX3|                        ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX3                                                                                 ; SEVEN_SEG              ; work         ;
-+---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                    ;
++-------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node                            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                           ; Entity Name                ; Library Name ;
++-------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; |Top_Processeur                                       ; 2566 (0)            ; 2649 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 41   ; 0            ; 0          ; |Top_Processeur                                                                                                               ; Top_Processeur             ; work         ;
+;    |Processeur:entity_processeur|                     ; 2510 (0)            ; 2649 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur                                                                                  ; Processeur                 ; work         ;
+;       |Decodeur:entity_decodeur|                      ; 44 (44)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Decodeur:entity_decodeur                                                         ; Decodeur                   ; work         ;
+;       |Registre:entity_psr|                           ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Registre:entity_psr                                                              ; Registre                   ; work         ;
+;       |Unite_de_Traitement:entity_udt|                ; 2270 (0)            ; 2576 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt                                                   ; Unite_de_Traitement        ; work         ;
+;          |ALU:entity_ALU|                             ; 85 (85)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|ALU:entity_ALU                                    ; ALU                        ; work         ;
+;          |Banc_Registres:entity_Banc_Registres|       ; 666 (666)           ; 512 (512)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres              ; Banc_Registres             ; work         ;
+;          |Memoire_Data:entity_Memory|                 ; 83 (83)             ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory                        ; Memoire_Data               ; work         ;
+;          |Mux2v1:entity_mux1|                         ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux1                                ; Mux2v1                     ; work         ;
+;          |Mux2v1:entity_mux2|                         ; 1407 (1407)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2                                ; Mux2v1                     ; work         ;
+;          |Mux2v1:entity_muxrb|                        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_muxrb                               ; Mux2v1                     ; work         ;
+;          |Registre:entity_Afficheur|                  ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Registre:entity_Afficheur                         ; Registre                   ; work         ;
+;       |Unite_des_Instructions_IRQ:entity_udi|         ; 185 (113)           ; 65 (65)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi                                            ; Unite_des_Instructions_IRQ ; work         ;
+;          |Memoire_Instruction_IRQ:entity_instruction| ; 72 (72)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|Memoire_Instruction_IRQ:entity_instruction ; Memoire_Instruction_IRQ    ; work         ;
+;       |VIC:entity_vic|                                ; 9 (9)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|Processeur:entity_processeur|VIC:entity_vic                                                                   ; VIC                        ; work         ;
+;    |SEVEN_SEG:entity_HEX0|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX0                                                                                         ; SEVEN_SEG                  ; work         ;
+;    |SEVEN_SEG:entity_HEX1|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX1                                                                                         ; SEVEN_SEG                  ; work         ;
+;    |SEVEN_SEG:entity_HEX2|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX2                                                                                         ; SEVEN_SEG                  ; work         ;
+;    |SEVEN_SEG:entity_HEX3|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Top_Processeur|SEVEN_SEG:entity_HEX3                                                                                         ; SEVEN_SEG                  ; work         ;
++-------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                                                                               ;
-+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------------+
-; Latch Name                                                                    ; Latch Enable Signal                                                      ; Free of Timing Hazards ;
-+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------------+
-; Processeur:entity_processeur|Decodeur:entity_decodeur|RegSel                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr7            ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|RegAff                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT_310  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.LDR_364  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|PSREn                   ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDi_418 ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.MOV_436  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl[1]              ; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl            ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUSrc                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl            ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl[0]              ; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl            ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|WrSrc                   ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr6            ; yes                    ;
-; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDr_400 ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT ; yes                    ;
-; Number of user-specified and inferred latches = 13                            ;                                                                          ;                        ;
-+-------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                              ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------------+
+; Latch Name                                                                    ; Latch Enable Signal                                                     ; Free of Timing Hazards ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------------+
+; Processeur:entity_processeur|Decodeur:entity_decodeur|RegSel                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr11          ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|RegAff                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl[1]              ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr4           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUSrc                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr4           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|ALUCtrl[0]              ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr4           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|WrSrc                   ; Processeur:entity_processeur|Decodeur:entity_decodeur|WideOr9           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|RegWr                   ; Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|nPCSel                  ; Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END                 ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.STR_440  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT_400  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_420  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.LDR_460  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.CMP_480  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDi_520 ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.MOV_540  ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDr_500 ; Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BX ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|MemWr                   ; Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END           ; yes                    ;
+; Processeur:entity_processeur|Decodeur:entity_decodeur|PSREn                   ; Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END           ; yes                    ;
+; Number of user-specified and inferred latches = 19                            ;                                                                         ;                        ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; Register name                                                                                                 ; Reason for Removal                     ;
-+---------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][3]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][3]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][3]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][3]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][3]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][3]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][3]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][3]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][2]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][2]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][2]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][2]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][2]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][2]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][2]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][2]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][1]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][1]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][1]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][1]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][1]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][1]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][1]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][1]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][0]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][0]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][0]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][0]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][0]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][0]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][0]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][0]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][7]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][7]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][7]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][7]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][7]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][7]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][7]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][7]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][6]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][6]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][6]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][6]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][6]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][6]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][6]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][6]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][5]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][5]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][5]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][5]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][5]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][5]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][5]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][5]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][4]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][4]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][4]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][4]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][4]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][4]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][4]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][4]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][11]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][11]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][11]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][11]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][11]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][11]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][11] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][11] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][10]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][10]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][10]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][10]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][10]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][10]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][10] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][10] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][9]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][9]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][9]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][9]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][9]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][9]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][9]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][9]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][8]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][8]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][8]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][8]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][8]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][8]   ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][8]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][8]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][15]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][15]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][15]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][15]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][15]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][15]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][15] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][15] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][14]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][14]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][14]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][14]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][14]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][14]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][14] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][14] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][13]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][13]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][13]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][13]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][13]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][13]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][13] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][13] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][12]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][12]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][12]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][12]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][12]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][12]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][12] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][12] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][16]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][16]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][16]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][16]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][16]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][16]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][16] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][16] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][17]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][17]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][17]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][17]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][17]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][17]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][17] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][17] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][18]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][18]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][18]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][18]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][18]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][18]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][18] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][18] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][19]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][19]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][19]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][19]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][19]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][19]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][19] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][19] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][20]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][20]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][20]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][20]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][20]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][20]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][20] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][20] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][21]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][21]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][21]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][21]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][21]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][21]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][21] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][21] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][22]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][22]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][22]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][22]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][22]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][22]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][22] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][22] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][23]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][23]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][23]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][23]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][23]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][23]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][23] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][23] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][24]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][24]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][24]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][24]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][24]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][24]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][24] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][24] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][25]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][25]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][25]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][25]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][25]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][25]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][25] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][25] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][26]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][26]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][26]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][26]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][26]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][26]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][26] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][26] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][27]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][27]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][27]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][27]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][27]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][27]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][27] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][27] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][28]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][28]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][28]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][28]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][28]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][28]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][28] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][28] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][29]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][29]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][29]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][29]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][29]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][29]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][29] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][29] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][30]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][30]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][30]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][30]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][30]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][30]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][30] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][30] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[4][31]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[5][31]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[6][31]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[7][31]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[8][31]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[9][31]  ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[10][31] ; Stuck at GND due to stuck port data_in ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[11][31] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 256                                                                       ;                                        ;
-+---------------------------------------------------------------------------------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                   ;
++------------------------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                                    ; Reason for Removal                                                ;
++------------------------------------------------------------------+-------------------------------------------------------------------+
+; Processeur:entity_processeur|VIC:entity_vic|VICPC[1,5..9,11..31] ; Merged with Processeur:entity_processeur|VIC:entity_vic|VICPC[10] ;
+; Processeur:entity_processeur|VIC:entity_vic|VICPC[4]             ; Merged with Processeur:entity_processeur|VIC:entity_vic|VICPC[2]  ;
+; Processeur:entity_processeur|VIC:entity_vic|VICPC[10]            ; Stuck at GND due to stuck port data_in                            ;
+; Total Number of Removed Registers = 29                           ;                                                                   ;
++------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -552,12 +309,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2327  ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 6     ;
-; Number of registers using Asynchronous Clear ; 2327  ;
+; Total registers                              ; 2649  ;
+; Number of registers using Synchronous Clear  ; 28    ;
+; Number of registers using Synchronous Load   ; 32    ;
+; Number of registers using Asynchronous Clear ; 2649  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2320  ;
+; Number of registers using Clock Enable       ; 2611  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -569,17 +326,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------------------------------------------------------------+---------+
 ; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[15][4] ; 2       ;
 ; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Banc[15][5] ; 2       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[38][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[36][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[41][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[35][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[33][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[40][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[34][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[32][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[42][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[39][0]         ; 1       ;
-; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[37][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[26][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[19][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[18][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[21][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[20][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[24][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[17][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[16][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[25][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[23][0]         ; 1       ;
+; Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory|Memory[22][0]         ; 1       ;
 ; Total number of inverted registers = 13                                                                      ;         ;
 +--------------------------------------------------------------------------------------------------------------+---------+
 
@@ -589,12 +346,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|ALU:entity_ALU|Mux29                       ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Mux28 ;
-; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Mux51 ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |Top_Processeur|Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[29]                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Top_Processeur|Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[4]                               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Top_Processeur|Processeur:entity_processeur|VIC:entity_vic|VICPC[2]                                                   ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|ALU:entity_ALU|Mux26                       ;
+; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Mux45 ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDr                              ;
-; 65:1               ; 7 bits    ; 301 LEs       ; 301 LEs              ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2|S[2]                    ;
-; 68:1               ; 25 bits   ; 1125 LEs      ; 1100 LEs             ; 25 LEs                 ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2|S[28]                   ;
+; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres|Mux20 ;
+; 65:1               ; 7 bits    ; 301 LEs       ; 301 LEs              ; 0 LEs                  ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2|S[31]                   ;
+; 68:1               ; 25 bits   ; 1125 LEs      ; 1100 LEs             ; 25 LEs                 ; No         ; |Top_Processeur|Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux2|S[26]                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -638,13 +398,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_des_Instructions:entity_udi|Extension:entity_extension ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                          ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------------+
-; n              ; 24    ; Signed Integer                                                                                                ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|Extension:entity_extension ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
+; n              ; 24    ; Signed Integer                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -672,22 +432,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 41                          ;
-; cycloneiii_ff         ; 2327                        ;
-;     CLR               ; 1                           ;
-;     CLR SLD           ; 6                           ;
-;     ENA CLR           ; 2320                        ;
-; cycloneiii_lcell_comb ; 2062                        ;
-;     arith             ; 42                          ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 36                          ;
-;     normal            ; 2020                        ;
-;         1 data inputs ; 18                          ;
-;         2 data inputs ; 35                          ;
-;         3 data inputs ; 97                          ;
-;         4 data inputs ; 1870                        ;
+; cycloneiii_ff         ; 2649                        ;
+;     CLR               ; 6                           ;
+;     CLR SCLR SLD      ; 28                          ;
+;     CLR SLD           ; 4                           ;
+;     ENA CLR           ; 2611                        ;
+; cycloneiii_lcell_comb ; 2570                        ;
+;     arith             ; 94                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 62                          ;
+;     normal            ; 2476                        ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 107                         ;
+;         4 data inputs ; 2291                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.50                       ;
-; Average LUT depth     ; 9.78                        ;
+; Max LUT depth         ; 19.50                       ;
+; Average LUT depth     ; 10.63                       ;
 +-----------------------+-----------------------------+
 
 
@@ -696,7 +457,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -706,103 +467,126 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jun 04 15:58:06 2024
+    Info: Processing started: Wed Jun 05 16:41:24 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Top_Processeur -c Top_Processeur
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/unite_des_instructions.vhd
-    Info (12022): Found design unit 1: Unite_des_Instructions-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 17
-    Info (12023): Found entity 1: Unite_des_Instructions File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/unite_de_traitement.vhd
-    Info (12022): Found design unit 1: Unite_de_Traitement-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 31
-    Info (12023): Found entity 1: Unite_de_Traitement File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/top_processeur.vhd
-    Info (12022): Found design unit 1: Top_Processeur-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 18
-    Info (12023): Found entity 1: Top_Processeur File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/seven_seg.vhd
-    Info (12022): Found design unit 1: SEVEN_SEG-COMB File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/SEVEN_SEG.vhd Line: 38
-    Info (12023): Found entity 1: SEVEN_SEG File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/SEVEN_SEG.vhd Line: 29
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/registre.vhd
-    Info (12022): Found design unit 1: Registre-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Registre.vhd Line: 17
-    Info (12023): Found entity 1: Registre File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Registre.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/processeur.vhd
-    Info (12022): Found design unit 1: Processeur-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd Line: 16
-    Info (12023): Found entity 1: Processeur File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/mux2v1.vhd
-    Info (12022): Found design unit 1: Mux2v1-BEHAVIORAL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Mux2v1.vhd Line: 20
-    Info (12023): Found entity 1: Mux2v1 File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Mux2v1.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/memoire_instruction.vhd
-    Info (12022): Found design unit 1: Memoire_Instruction-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Instruction.vhd Line: 14
-    Info (12023): Found entity 1: Memoire_Instruction File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Instruction.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/memoire_data.vhd
-    Info (12022): Found design unit 1: Memoire_Data-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Data.vhd Line: 19
-    Info (12023): Found entity 1: Memoire_Data File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Data.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/extension.vhd
-    Info (12022): Found design unit 1: Extension-BEHAVIORAL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Extension.vhd Line: 16
-    Info (12023): Found entity 1: Extension File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Extension.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/decodeur.vhd
-    Info (12022): Found design unit 1: Decodeur-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 25
-    Info (12023): Found entity 1: Decodeur File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/banc_registres.vhd
-    Info (12022): Found design unit 1: Banc_Registres-RTL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Banc_Registres.vhd Line: 20
-    Info (12023): Found entity 1: Banc_Registres File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Banc_Registres.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/iness/desktop/l3/s6/electronique/elecnum3/processeurmonocycle/src/alu.vhd
-    Info (12022): Found design unit 1: ALU-BEHAVIORAL File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/ALU.vhd Line: 15
-    Info (12023): Found entity 1: ALU File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/ALU.vhd Line: 6
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/vic.vhd
+    Info (12022): Found design unit 1: VIC-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/VIC.vhd Line: 19
+    Info (12023): Found entity 1: VIC File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/VIC.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/unite_des_instructions_irq.vhd
+    Info (12022): Found design unit 1: Unite_des_Instructions_IRQ-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 22
+    Info (12023): Found entity 1: Unite_des_Instructions_IRQ File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/memoire_instruction_irq.vhd
+    Info (12022): Found design unit 1: Memoire_Instruction_IRQ-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Instruction_IRQ.vhd Line: 16
+    Info (12023): Found entity 1: Memoire_Instruction_IRQ File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Instruction_IRQ.vhd Line: 7
+Warning (12019): Can't analyze file -- file ../src/Unite_des_Instructions.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/unite_de_traitement.vhd
+    Info (12022): Found design unit 1: Unite_de_Traitement-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 31
+    Info (12023): Found entity 1: Unite_de_Traitement File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/top_processeur.vhd
+    Info (12022): Found design unit 1: Top_Processeur-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 18
+    Info (12023): Found entity 1: Top_Processeur File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/seven_seg.vhd
+    Info (12022): Found design unit 1: SEVEN_SEG-COMB File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/SEVEN_SEG.vhd Line: 38
+    Info (12023): Found entity 1: SEVEN_SEG File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/SEVEN_SEG.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/registre.vhd
+    Info (12022): Found design unit 1: Registre-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Registre.vhd Line: 17
+    Info (12023): Found entity 1: Registre File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Registre.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/processeur.vhd
+    Info (12022): Found design unit 1: Processeur-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 18
+    Info (12023): Found entity 1: Processeur File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/mux2v1.vhd
+    Info (12022): Found design unit 1: Mux2v1-BEHAVIORAL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Mux2v1.vhd Line: 20
+    Info (12023): Found entity 1: Mux2v1 File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Mux2v1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/memoire_instruction.vhd
+    Info (12022): Found design unit 1: Memoire_Instruction-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Instruction.vhd Line: 14
+    Info (12023): Found entity 1: Memoire_Instruction File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Instruction.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/memoire_data.vhd
+    Info (12022): Found design unit 1: Memoire_Data-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Data.vhd Line: 19
+    Info (12023): Found entity 1: Memoire_Data File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Data.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/extension.vhd
+    Info (12022): Found design unit 1: Extension-BEHAVIORAL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Extension.vhd Line: 16
+    Info (12023): Found entity 1: Extension File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Extension.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/decodeur.vhd
+    Info (12022): Found design unit 1: Decodeur-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 26
+    Info (12023): Found entity 1: Decodeur File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/banc_registres.vhd
+    Info (12022): Found design unit 1: Banc_Registres-RTL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Banc_Registres.vhd Line: 20
+    Info (12023): Found entity 1: Banc_Registres File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Banc_Registres.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ 21106126/desktop/monocycle-processor-main/monocycle-processor-main/src/alu.vhd
+    Info (12022): Found design unit 1: ALU-BEHAVIORAL File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/ALU.vhd Line: 15
+    Info (12023): Found entity 1: ALU File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/ALU.vhd Line: 6
 Info (12127): Elaborating entity "Top_Processeur" for the top level hierarchy
-Info (12128): Elaborating entity "Processeur" for hierarchy "Processeur:entity_processeur" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 28
-Warning (10873): Using initial value X (don't care) for net "EtatPSR_in[27..0]" at Processeur.vhd(20) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd Line: 20
-Info (12128): Elaborating entity "Unite_de_Traitement" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd Line: 40
-Info (12128): Elaborating entity "Banc_Registres" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 43
-Info (12128): Elaborating entity "Extension" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Extension:entity_extension" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 56
-Info (12128): Elaborating entity "Mux2v1" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux1" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 62
-Info (12128): Elaborating entity "Mux2v1" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_muxrb" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 70
-Info (12128): Elaborating entity "ALU" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|ALU:entity_ALU" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 79
-Info (12128): Elaborating entity "Memoire_Data" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 91
-Info (12128): Elaborating entity "Registre" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Registre:entity_Afficheur" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_de_Traitement.vhd Line: 109
-Info (12128): Elaborating entity "Unite_des_Instructions" for hierarchy "Processeur:entity_processeur|Unite_des_Instructions:entity_udi" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd Line: 63
-Info (12128): Elaborating entity "Extension" for hierarchy "Processeur:entity_processeur|Unite_des_Instructions:entity_udi|Extension:entity_extension" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 23
-Info (12128): Elaborating entity "Memoire_Instruction" for hierarchy "Processeur:entity_processeur|Unite_des_Instructions:entity_udi|Memoire_Instruction:entity_instruction" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 42
-Info (12128): Elaborating entity "Decodeur" for hierarchy "Processeur:entity_processeur|Decodeur:entity_decodeur" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Processeur.vhd Line: 73
-Warning (10631): VHDL Process Statement warning at Decodeur.vhd(37): inferring latch(es) for signal or variable "instr_courante", which holds its previous value in one or more paths through the process File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Warning (10631): VHDL Process Statement warning at Decodeur.vhd(67): inferring latch(es) for signal or variable "ALUCtrl", which holds its previous value in one or more paths through the process File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Warning (10631): VHDL Process Statement warning at Decodeur.vhd(67): inferring latch(es) for signal or variable "ALUSrc", which holds its previous value in one or more paths through the process File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Warning (10631): VHDL Process Statement warning at Decodeur.vhd(67): inferring latch(es) for signal or variable "WrSrc", which holds its previous value in one or more paths through the process File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Warning (10631): VHDL Process Statement warning at Decodeur.vhd(67): inferring latch(es) for signal or variable "RegSel", which holds its previous value in one or more paths through the process File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "RegSel" at Decodeur.vhd(67) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "WrSrc" at Decodeur.vhd(67) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "ALUSrc" at Decodeur.vhd(67) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "ALUCtrl[0]" at Decodeur.vhd(67) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "ALUCtrl[1]" at Decodeur.vhd(67) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "ALUCtrl[2]" at Decodeur.vhd(67) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 67
-Info (10041): Inferred latch for "instr_courante.BLT" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.BAL" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.STR" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.LDR" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.CMP" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.ADDr" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.ADDi" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (10041): Inferred latch for "instr_courante.MOV" at Decodeur.vhd(37) File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-Info (12128): Elaborating entity "SEVEN_SEG" for hierarchy "SEVEN_SEG:entity_HEX0" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 35
+Info (12128): Elaborating entity "Processeur" for hierarchy "Processeur:entity_processeur" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 30
+Warning (10873): Using initial value X (don't care) for net "EtatPSR_in[27..0]" at Processeur.vhd(22) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 22
+Info (12128): Elaborating entity "Unite_de_Traitement" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 46
+Info (12128): Elaborating entity "Banc_Registres" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Banc_Registres:entity_Banc_Registres" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 43
+Info (12128): Elaborating entity "Extension" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Extension:entity_extension" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 56
+Info (12128): Elaborating entity "Mux2v1" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_mux1" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 62
+Info (12128): Elaborating entity "Mux2v1" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Mux2v1:entity_muxrb" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 70
+Info (12128): Elaborating entity "ALU" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|ALU:entity_ALU" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 79
+Info (12128): Elaborating entity "Memoire_Data" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Memoire_Data:entity_Memory" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 91
+Info (12128): Elaborating entity "Registre" for hierarchy "Processeur:entity_processeur|Unite_de_Traitement:entity_udt|Registre:entity_Afficheur" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_de_Traitement.vhd Line: 109
+Info (12128): Elaborating entity "Unite_des_Instructions_IRQ" for hierarchy "Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 69
+Info (12128): Elaborating entity "Extension" for hierarchy "Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|Extension:entity_extension" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 36
+Info (12128): Elaborating entity "Memoire_Instruction_IRQ" for hierarchy "Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|Memoire_Instruction_IRQ:entity_instruction" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 71
+Info (12128): Elaborating entity "Decodeur" for hierarchy "Processeur:entity_processeur|Decodeur:entity_decodeur" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 85
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(38): inferring latch(es) for signal or variable "instr_courante", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "nPCSel", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "PSREn", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "RegWr", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "ALUCtrl", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "ALUSrc", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "WrSrc", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "MemWr", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "RegAff", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Warning (10631): VHDL Process Statement warning at Decodeur.vhd(70): inferring latch(es) for signal or variable "RegSel", which holds its previous value in one or more paths through the process File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "RegSel" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "RegAff" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "MemWr" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "WrSrc" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "ALUSrc" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "ALUCtrl[0]" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "ALUCtrl[1]" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "ALUCtrl[2]" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "RegWr" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "PSREn" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "nPCSel" at Decodeur.vhd(70) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 70
+Info (10041): Inferred latch for "instr_courante.BX" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.BLT" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.BAL" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.STR" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.LDR" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.CMP" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.ADDr" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.ADDi" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (10041): Inferred latch for "instr_courante.MOV" at Decodeur.vhd(38) File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+Info (12128): Elaborating entity "VIC" for hierarchy "Processeur:entity_processeur|VIC:entity_vic" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Processeur.vhd Line: 115
+Info (12128): Elaborating entity "SEVEN_SEG" for hierarchy "SEVEN_SEG:entity_HEX0" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 39
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276013): RAM logic "Processeur:entity_processeur|Unite_des_Instructions:entity_udi|Memoire_Instruction:entity_instruction|mem" is uninferred because MIF is not supported for the selected family File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Memoire_Instruction.vhd Line: 34
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|RegAff has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[5] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_328 has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT_310 has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[0] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.LDR_364 has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[5] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|PSREn has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[4] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDi_418 has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[4] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.MOV_436 has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[4] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDr_400 has unsafe behavior File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Decodeur.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions:entity_udi|PC[4] File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Unite_des_Instructions.vhd Line: 31
-Info (13000): Registers with preset signals will power-up high File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Banc_Registres.vhd Line: 45
+    Info (276013): RAM logic "Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|Memoire_Instruction_IRQ:entity_instruction|mem" is uninferred because MIF is not supported for the selected family File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Memoire_Instruction_IRQ.vhd Line: 77
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "Processeur:entity_processeur|Decodeur:entity_decodeur|MemWr" merged with LATCH primitive "Processeur:entity_processeur|Decodeur:entity_decodeur|RegAff" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 20
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|IRQ_END has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.STR_440 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BLT_400 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.BAL_420 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.LDR_460 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.CMP_480 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDi_520 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.MOV_540 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Warning (13012): Latch Processeur:entity_processeur|Decodeur:entity_decodeur|instr_courante.ADDr_500 has unsafe behavior File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Decodeur.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processeur:entity_processeur|Unite_des_Instructions_IRQ:entity_udi|PC[5] File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Unite_des_Instructions_IRQ.vhd Line: 44
+Info (13000): Registers with preset signals will power-up high File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Banc_Registres.vhd Line: 45
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE10_LITE_Golden_Top" -- entity does not exist in design
@@ -832,25 +616,23 @@ Warning (20013): Ignored 24 assignments for entity "DE10_LITE_Golden_Top" -- ent
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE10_LITE_Golden_Top -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/iness/Desktop/L3/S6/Electronique/ElecNum3/ProcesseurMonoCycle/src/Top_Processeur.vhd Line: 9
-Info (21057): Implemented 4406 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/ 21106126/Desktop/Monocycle-Processor-main/Monocycle-Processor-main/src/Top_Processeur.vhd Line: 9
+Info (21057): Implemented 5230 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 4365 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Tue Jun 04 15:58:24 2024
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 5189 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 4894 megabytes
+    Info: Processing ended: Wed Jun 05 16:41:35 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:17
 
 

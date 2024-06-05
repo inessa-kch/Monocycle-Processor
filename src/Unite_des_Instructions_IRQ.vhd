@@ -26,6 +26,7 @@ ARCHITECTURE RTL OF Unite_des_Instructions_IRQ IS
     SIGNAL int2 : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
     SIGNAL OffsetExt : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
     SIGNAL LR : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
+    --SIGNAL IRQ_SERV: STD_LOGIC
     constant OffsetSize : integer := 24;
 BEGIN
 
@@ -45,12 +46,16 @@ BEGIN
             LR <= (OTHERS => '0');
             IRQ_SERV <= '0';
         ELSIF rising_edge(CLK) THEN
-            IF IRQ = '1' THEN
-                LR <= PC;
+            IF IRQ = '1' and PC < X"00000009" THEN
+                IF nPCsel = '0' then
+                    LR <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+                else
+                    LR <= STD_LOGIC_VECTOR(unsigned(PC) + 1 + unsigned(OffsetExt));
+                end if;
                 PC <= VICPC;
                 IRQ_SERV <= '1';
             ELSIF IRQ_END = '1' THEN
-                PC <= STD_LOGIC_VECTOR(unsigned(LR) + 1);
+                PC <= LR;
                 IRQ_SERV <= '0';
             ELSE
                 IF nPCsel = '0' THEN
