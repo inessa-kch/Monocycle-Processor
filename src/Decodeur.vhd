@@ -73,8 +73,6 @@ BEGIN
                 WHEN MOV =>
                     nPCSel <= '0';
                     PSREn <= '0';
-                    --Rd <= instruction(15 DOWNTO 12);
-                    --Imm8 <= instruction(7 DOWNTO 0);
                     RegWr <= '1';
                     ALUCtrl <= "001";
                     ALUSrc <= '1';
@@ -85,9 +83,6 @@ BEGIN
                 WHEN ADDi =>
                     nPCSel <= '0';
                     PSREn <= '0';
-                    --Rn <= instruction(19 DOWNTO 16);
-                    --Rd <= instruction(15 DOWNTO 12);
-                    --Imm8 <= instruction(7 DOWNTO 0);
                     RegWr <= '1';
                     ALUCtrl <= "000";
                     ALUSrc <= '1';
@@ -98,9 +93,6 @@ BEGIN
                 WHEN ADDr =>
                     nPCSel <= '0';
                     PSREn <= '0';
-                    --Rn <= instruction(19 DOWNTO 16);
-                    --Rd <= instruction(15 DOWNTO 12);
-                    --Rm <= instruction(3 DOWNTO 0);
                     RegWr <= '1';
                     RegSel <= '0';
                     ALUCtrl <= "000";
@@ -112,8 +104,6 @@ BEGIN
                 WHEN CMP =>
                     nPCSel <= '0';
                     PSREn <= '1';
-                    --Rn <= instruction(19 DOWNTO 16);
-                    --Imm8 <= instruction(7 DOWNTO 0);
                     RegWr <= '0';
                     ALUCtrl <= "010";
                     ALUSrc <= '1';
@@ -123,8 +113,6 @@ BEGIN
                 WHEN LDR =>
                     nPCSel <= '0';
                     PSREn <= '0';
-                    --Rn <= instruction(19 DOWNTO 16);
-                    --Rd <= instruction(15 DOWNTO 12);
                     RegWr <= '1';
                     ALUCtrl <= "000";
                     ALUSrc <= '1';
@@ -135,8 +123,6 @@ BEGIN
                 WHEN STR =>
                     nPCSel <= '0';
                     PSREn <= '0';
-                    --Rn <= instruction(19 DOWNTO 16);
-                    --Rd <= instruction(15 DOWNTO 12);
                     RegWr <= '0';
                     RegSel <= '1';
                     ALUCtrl <= "000";
@@ -150,12 +136,11 @@ BEGIN
                     RegWr <= '0';
                     MemWr <= '0';
                     RegAff <= '0';
-                    --Imm24 <= instruction(23 DOWNTO 0);
+
 
                 WHEN BLT =>
                     IF EtatPSR(31) = '1' THEN
                         nPCSel <= '1';
-                        --Imm24 <= instruction(23 DOWNTO 0);
                     ELSE
                         nPCSel <= '0';
                     END IF;
@@ -171,11 +156,6 @@ BEGIN
                 WHEN OTHERS =>
                     nPCSel <= '0';
                     PSREn <= '0';
-                    --Rn <= "0000";
-                    --Rd <= "0000";
-                    --Rm <= "0000";
-                    --Imm24 <= (OTHERS => '0');
-                    --Imm8 <= (OTHERS => '0');
                     RegWr <= '0';
                     RegSel <= '0';
                     ALUCtrl <= "000";

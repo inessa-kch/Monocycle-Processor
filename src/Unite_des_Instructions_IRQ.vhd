@@ -1,8 +1,9 @@
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
+
 -----------------------------------------
-ENTITY Unite_des_Instructions IS
+ENTITY Unite_des_Instructions_IRQ IS
     ---------------------------------------
     PORT (
         CLK : IN STD_LOGIC;
@@ -14,19 +15,25 @@ ENTITY Unite_des_Instructions IS
         Offset : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
         nPCsel : IN STD_LOGIC;
         IRQ_SERV: OUT STD_LOGIC
-
     );
-END ENTITY Unite_des_Instructions;
+END ENTITY Unite_des_Instructions_IRQ;
+
 ---------------------------------------
-ARCHITECTURE RTL OF Unite_des_Instructions IS
+ARCHITECTURE RTL OF Unite_des_Instructions_IRQ IS
     ---------------------------------------
     SIGNAL PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL int1 : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL int2 : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
     SIGNAL OffsetExt : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
-    SIGNAL LR: STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL LR : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
     constant OffsetSize : integer := 24;
 BEGIN
+
+    int1 <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+    int2 <= STD_LOGIC_VECTOR(unsigned(PC) + 1 + unsigned(OffsetExt));
+
     entity_extension : ENTITY work.Extension GENERIC MAP(N => OffsetSize)
-        PORT MAP(
+        PORT MAP (
             E => Offset,
             S => OffsetExt
         );
@@ -43,25 +50,24 @@ BEGIN
                 PC <= VICPC;
                 IRQ_SERV <= '1';
             ELSIF IRQ_END = '1' THEN
-                PC <= STD_LOGIC_VECTOR(unsigned(LR)+1);
+                PC <= STD_LOGIC_VECTOR(unsigned(LR) + 1);
                 IRQ_SERV <= '0';
-            else
-                IRQ_SERV <= '0';
-            end if;
-            IF nPCsel = '0' THEN
-                PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
             ELSE
-                PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1 + unsigned(OffsetExt));
+                IF nPCsel = '0' THEN
+                    PC <= int1;
+                ELSE
+                    PC <= int2;
+                END IF;
+                IRQ_SERV <= '0';
             END IF;
-
         END IF;
     END PROCESS;
 
     entity_instruction : ENTITY work.Memoire_Instruction_IRQ
-    PORT MAP(
-        PC => PC,
-        Instruction => Instruction
-    );
-END ARCHITECTURE;
+        PORT MAP (
+            PC => PC,
+            Instruction => Instruction
+        );
 
+END ARCHITECTURE;
 

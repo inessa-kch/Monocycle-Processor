@@ -44,15 +44,16 @@ BEGIN
             elsif (IRQ1 = '1' and IRQ1_prev = '0') then
                 IRQ1_memo <= '1';
                 VICPC <= X"00000015";
+
+            elsif (IRQ_SERV = '1') THEN
+                IRQ0_memo <= '0';
+                IRQ1_memo <= '0';    
             else
                 VICPC <= (OTHERS => '0');
             end if;
 
-            if (IRQ_SERV = '1') then
-                IRQ0_memo <= '0';
-                IRQ1_memo <= '0';
-            end if;
             IRQ <= IRQ0_memo or IRQ1_memo;
+
         end if;  
 
     end process;

@@ -9,6 +9,8 @@ ENTITY Processeur IS
     PORT (
         CLK : IN STD_LOGIC;
         Reset : IN STD_LOGIC;
+        IRQ0: IN STD_LOGIC;
+        IRQ1: IN STD_LOGIC;
         Afficheur : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
 END ENTITY Processeur;
@@ -28,6 +30,10 @@ signal ALUSrc : STD_LOGIC;
 signal WrSrc : STD_LOGIC;
 signal MemWr : STD_LOGIC;
 signal RegAff : STD_LOGIC;
+signal IRQ_SERV : STD_LOGIC;
+signal IRQ_END : STD_LOGIC;
+signal IRQ: STD_LOGIC;
+signal VICPC : STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RW, RA, RB: STD_LOGIC_VECTOR(3 DOWNTO 0);
 signal Imm24 : STD_LOGIC_VECTOR(23 DOWNTO 0);
 signal Imm8 : STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -60,14 +66,20 @@ entity_udt: entity work.Unite_de_Traitement
     );
 
 
-entity_udi: entity work.Unite_des_Instructions
+entity_udi: entity work.Unite_des_Instructions_IRQ
     port map(
         CLK => CLK,
         Reset => Reset,
         Instruction => Instruction,
         Offset => Imm24,
-        nPCSel => nPCSel
+        nPCSel => nPCSel,
+        IRQ => IRQ,
+        VICPC => VICPC,
+        IRQ_END => IRQ_END,
+        IRQ_SERV => IRQ_SERV
     );
+
+
 
 
 entity_decodeur: entity work.Decodeur
@@ -84,7 +96,8 @@ entity_decodeur: entity work.Decodeur
         ALUSrc => ALUSrc,
         WrSrc => WrSrc,
         MemWr => MemWr,
-        RegAff => RegAff
+        RegAff => RegAff,
+        IRQ_END => IRQ_END
     );
 
  
@@ -96,7 +109,21 @@ entity_psr : entity work.Registre
         DATAIN =>EtatPSR_in,
         WE=> PSREn,
         DATAOUT => EtatPSR_out
-    );    
+    );
+    
+    
+entity_vic: entity work.VIC
+    port map(
+        CLK => CLK,
+        Reset => Reset,
+        IRQ_SERV => IRQ_SERV,
+        IRQ0 => IRQ0,
+        IRQ1 => IRQ1,
+        IRQ => IRQ,
+        VICPC => VICPC
+    );
+
+ 
 
 
 END ARCHITECTURE;

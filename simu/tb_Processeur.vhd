@@ -13,6 +13,8 @@ ARCHITECTURE TEST OF tb_Processeur IS
 CONSTANT Period : TIME := 4 ns; 
 signal tb_CLK : STD_LOGIC:='0';
 signal tb_Reset : STD_LOGIC:='0';
+signal tb_IRQ0 : STD_LOGIC:='0';
+signal tb_IRQ1 : STD_LOGIC:='0';
 signal tb_Afficheur : STD_LOGIC_VECTOR(31 DOWNTO 0):=(others=>'0');
 SIGNAL Done : BOOLEAN := false;
 BEGIN
@@ -26,6 +28,8 @@ entity_processeur: entity work.Processeur
 port map(
     CLK => tb_CLK,
     Reset => tb_Reset,
+    IRQ0 => tb_IRQ0,
+    IRQ1 => tb_IRQ1,
     Afficheur => tb_Afficheur
 );
 
@@ -36,8 +40,10 @@ BEGIN
     WAIT FOR Period;
     tb_Reset <= '0';
 
+    tb_IRQ0 <= '1';
 
-    wait for 200*Period;
+
+    wait for 700*Period;
 
 
     REPORT "End of test. Verify that no error was reported.";
