@@ -14,6 +14,7 @@ vsim -novopt tb_Unite_de_Traitement
 
 
 add wave *
-
+add wave -hexa /tb_Unite_de_Traitement/entity_UDT/entity_Banc_Registres/Banc
+add wave -hexa /tb_Unite_de_Traitement/entity_UDT/entity_Memory/Memory
 run -a
 wave zoom full

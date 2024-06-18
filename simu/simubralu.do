@@ -25,6 +25,7 @@ add wave tb_N
 add wave tb_Z
 add wave tb_C
 add wave tb_V
+add wave -hexa /tb_Banc_Registres_ALU/UUT/Banc
 
 
 

@@ -52,7 +52,7 @@ BEGIN
             C => tb_C,
             V => tb_V
         );
-    -- Control Simulation and check outputs
+
     PROCESS     
     
     BEGIN

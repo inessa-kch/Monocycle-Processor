@@ -15,7 +15,6 @@ END ENTITY ALU;
 ARCHITECTURE BEHAVIORAL OF ALU IS
   ---------------------------------------
   SIGNAL temp_sum_pos : STD_LOGIC_VECTOR(32 DOWNTO 0);
-  --SIGNAL temp_sum_neg : STD_LOGIC_VECTOR(32 DOWNTO 0);
   SIGNAL Output : STD_LOGIC_VECTOR(31 DOWNTO 0);
 BEGIN
   PROCESS (OP, A, B)
@@ -36,7 +35,6 @@ BEGIN
   --Flags
 
   temp_sum_pos <= STD_LOGIC_VECTOR(('0' & signed(A)) + ('0' & signed(B)));
-  --temp_sum_neg <= STD_LOGIC_VECTOR(('0' & unsigned(A)) - ('0' & unsigned(B)));
   N <= '1' WHEN (Output(31) = '1') ELSE '0';
   Z <= '1' WHEN (Output = (31 DOWNTO 0 => '0')) ELSE '0';
   C <= '1' WHEN ((temp_sum_pos(32) = '1' AND OP = "000") OR (A > B AND OP = "010")) ELSE '0';
